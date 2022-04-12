@@ -1,23 +1,23 @@
-​#​include​ ​<​stdio.h​>
-/*​*
- * main - program that prints the alphabet in lowercase, followed by a new line 
- ​* You can only use the putchar
- ​* Return: 0
- ​​*/
-int​ ​main​(​void​)
+/*
+ * File: 4-print_alphabt.c
+ * Auth: Brennan D Baraban
+ */
+
+#include <stdio.h>
+
+/**
+ * main - Prints the alphabet in lowercase, except for q and e.
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-int​ lw = ​'​a​'​;
-​while​ (lw <= ​'​z​'​)
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-​if​ (lw == ​'​e​'​ || lw == ​'​q​'​)
-​{
-lw += ​1;​
+if (letter != 'e' && letter != 'q')
+putchar(letter);
 }
-else
-{
-putchar​(lw);
-​lw += ​1​;
+putchar('\n');
+return (0);
 }
-putchar​(​'​\n​'​);
-return​ (​0​);
-​}
