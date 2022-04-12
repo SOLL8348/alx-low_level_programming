@@ -1,25 +1,21 @@
- ​#​include​ ​<​stdio.h​> 
-  
- ​/*​* 
- ​ * main - program that prints the alphabet in lowercase, and then in uppercase, 
- ​ * You can only use the putchar 
- ​ * Return: 0 
- ​ ​*/ 
-  
- ​int​ ​main​(​void​) 
- ​{ 
- ​int​ lw = ​'​a​'​; 
- ​int​ up = ​'​A​'​; 
- ​while​ (lw <= ​'​z​'​) 
- ​{ 
- ​putchar​(lw); 
- ​lw += ​1​; 
- ​} 
- ​while​ (up <= ​'​Z​'​) 
- ​{ 
- ​putchar​(up); 
- ​up += ​1​; 
- ​} 
- ​putchar​(​'​\n​'​); 
- ​return​ (​0​); 
- ​}
+​#​include​ ​<​stdio.h​>
+​/*​*
+​ * main - Entry point
+​ *
+ * Return: Always 0 (Sucess/correct)
+ ​*/
+int​ ​main​(​void​)
+{
+char​ lower_case;
+char​ upper_case;
+for​ (lower_case = ​'​a​'​; lower_case <= ​'​z​'​; lower_case++)
+{
+putchar​(lower_case);
+}
+for​ (upper_case = ​'​A​'​; upper_case <= ​'​Z​'​; upper_case++)
+{
+​putchar​(upper_case);
+}
+​putchar​ (​'​\n​'​);
+​return​ (​0​);
+}
