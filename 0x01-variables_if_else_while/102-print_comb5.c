@@ -6,7 +6,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers.
+ * main - Prints all possible combinations of double-digit numbers.
+ * The numbers should range from 0 to 99
  * Return: Always 0.
  */
 int main(void)
