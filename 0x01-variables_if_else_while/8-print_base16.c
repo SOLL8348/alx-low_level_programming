@@ -1,4 +1,4 @@
-/**
+/*
  * File: 8-print_base16.c
  * Auth: Brennan D Baraban
  */
