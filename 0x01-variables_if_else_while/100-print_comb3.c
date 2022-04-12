@@ -1,38 +1,28 @@
-/*
- * File: 100-print_comb3.c
- * Auth: Brennan D Baraban
- */
-​#​include​ ​<​stdio.h​>
-
+ ​#​include​ ​<​stdio.h​>
 ​/*​*
-​ * main - program that prints all possible different combinations of two digits  
- ​* Numbers must be separated by ,followed by a space 
- ​* The two digits must be different
- ​* 01 and 10 are considered the same combination of the two digits 0 and 1 
- ​* Return: 0
- ​​*/
-
+ ​* main - Entry point 
+ *
+​ * Return: Always 0 (Success/completed) 
+​ ​*/
 ​int​ ​main​(​void​)
+ ​{
+int​ number_left; 
+​int​ number_right;
+​for​ (number_left = ​48​; number_right <= ​78​; number_left++) 
 ​{
-int​ n1 = ​48​;
-int​ n2;
-​int​ com = ​44​;
-​while​ (n1 <= ​57​)
+​for​ (number_right = number_left + ​1​ ; number_right <= ​78​; number_right++) 
 ​{
-n2 = n1 + ​1​;
-​while​ (n2 <= ​57​)
+putchar​(number_left); 
+​putchar​ (number_right); 
+if​ ((number_left == ​56​) && (number_right == ​78​)) 
 {
-​putchar​(n1);
-​putchar​(n2);
-​if​ (n1 != ​56​ || n2 != ​57​)
-{
-putchar​(com);
-​putchar​(​32​);
+break​;
 }
-n2 += ​1​;
-​}
-​n1 += ​1​;
-​}
+putchar​(​'​,​'​);
+​putchar​ (​'​ ​'​);
+}
+  
+ ​} 
 ​putchar​(​'​\n​'​);
 return​ (​0​);
-}
+​}
