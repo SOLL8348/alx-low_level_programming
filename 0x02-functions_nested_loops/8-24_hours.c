@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Jack_bauer - print all times of day from 00:00 to 23:59
+ * jack_bauer - print all times of day from 00:00 to 23:59
  *
  * Return: void
  */
