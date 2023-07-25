@@ -21,5 +21,5 @@ nclude "main.h"
 										                        f = s[j]; 
 													                 s[j] = s[k]; 
 															                  s[k] = f; 
-																	           } 
-							       }
+									      }
+}
