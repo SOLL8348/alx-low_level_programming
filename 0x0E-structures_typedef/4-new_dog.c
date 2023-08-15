@@ -1,5 +1,6 @@
+#include <stdlib.h> 
 #include "dog.h"
-#include <stdlib.h>
+
 /**
 * new_dog - creates a new dog.
 * @name: name of the dog.
@@ -38,4 +39,6 @@ p_dog->name[i] = '\0';
 p_dog->age = age;
 for (i = 0; i < lowner; i++)
 p_dog->owner[i] = owner[i];
-p_dog->own
+p_dog->owner[i] = '\0';
+return (p_dog);
+}
